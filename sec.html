@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Symulator BIOSU by Dominik Kostecki</title>
+	
+	<meta name="description" content="Symulator BIOSU InsydeH20" />
+	<meta name="keywords" content="Bios, Dominik Kostecki, SCI, Symulator, Konfiguracja, Oprogramowanie, CMOS, Config" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Changa+One|VT323" rel="stylesheet">
+	<script src="scripts.js" type="text/javascript"></script>
+
+	<script type="text/javascript">document.onkeydown = arrowChecker;
+
+    function arrowChecker(e) {
+        e = e || window.event;
+        if (e.keyCode == '37') { //left
+            document.location.href = "config.html";
+        }
+        else if (e.keyCode == '39') { //right
+            document.location.href = "boot.html";
+        }
+        else if (e.keyCode == '27'){
+            document.location.href = "http://google.pl"
+        }
+        else if (e.keyCode == '121'){
+            document.location.href = "http://google.pl"
+        }
+    }</script>
+
+
+
+
+</head>
+
+<body>
+
+
+<script type="text/javascript">opis(numer)</script>
+<div id="content">
+
+	<div id="logo">
+	InsydeH20 Oprogramowanie Konfiguracyjne Ver. 3.7-Web_Sim_Release
+	</div>
+	<div id="description">
+	Najedź na dowolną opcje, aby zobaczyć jej opis
+	</div>
+	
+	<div id="menu">
+	<div class="option"><a onmouseover="opis(1);">Informacje</a></div>
+	<div class="option"><a onmouseover="opis(2);">Konfiguracja</a></div>
+	<div class="option"><a onmouseover="opis(3);">Bezpieczeństwo</a></div>
+	<div class="option"><a onmouseover="opis(4);">Boot</a></div>
+	<div class="option"><a onmouseover="opis(5);">Wyjście</a></div>
+	</div>
+	
+	<div id="settings">
+			<div id="inner_settings" style="color:darkblue">
+				<br /><br /><br /><br /><br />
+				<span style="margin-left:17.8em">[Bezpieczeństwo] <br />
+				<span style="margin-left:15em">Konfiguracja zablokowana hasłem: <br />
+				<span style="margin-left:17.2em"><input type="password" name="pass"><br>
+				<br /><br /><br /><br /><br />
+
+			</div>
+	</div>
+
+
+
+	<div id="controls">
+	<div class="optionC">F1 Pomoc </div> 
+	<div class="optionC">&#8593;&#8595; Wybierz Opcje</div>
+	<div class="optionC">&#8596; Wybierz Menu</div>
+	<div class="optionC">Enter Wybierz</div>
+	<div class="optionC">F5/F6 Zmień Wartość</div>
+	<div class="optionC">F9 Ustawienia Domyślne</div>
+	<div class="optionC">ESC Wyjdź</div>
+	<div class="optionC">F10 Zapisz i Wyjdź</div>
+	</div>
+	
+	<div id="footer">
+	Copyright &copy by Dominik "McDominikoso" Kostecki. Przeznaczone na Cele Naukowe. Wersja Prototypowa, Wszelkie prawa Zastrzeżone.
+	</div>
+	
+
+</div>
+<script type="text/javascript">document.body.innerHTML = document.body.innerHTML.replace("&amp;tab;", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;").replace("&amp;tabf;", "&nbsp;&nbsp;&nbsp;&nbsp;");</script>
+</body>
+</html>

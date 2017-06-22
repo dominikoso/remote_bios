@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Symulator BIOSU by Dominik Kostecki</title>
+	
+	<meta name="description" content="Symulator BIOSU InsydeH20" />
+	<meta name="keywords" content="Bios, Dominik Kostecki, SCI, Symulator, Konfiguracja, Oprogramowanie, CMOS, Config" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Changa+One|VT323" rel="stylesheet">
+	<script src="scripts.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        <!--
+
+        function init ( )
+        {
+            timeDisplay = document.createTextNode ( "" );
+            document.getElementById("clock").appendChild ( timeDisplay );
+        }
+
+        function updateClock ( )
+        {
+            var currentTime = new Date ( );
+
+            var currentHours = currentTime.getHours ( );
+            var currentMinutes = currentTime.getMinutes ( );
+            var currentSeconds = currentTime.getSeconds ( );
+
+            // Pad the minutes and seconds with leading zeros, if required
+            currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+            currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+
+            // Choose either "AM" or "PM" as appropriate
+            var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+
+            // Convert the hours component to 12-hour format if needed
+            currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+
+            // Convert an hours component of "0" to "12"
+            currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+
+            // Compose the string for display
+            var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+
+            // Update the time display
+            document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+        }
+
+        // -->
+	</script>
+	<script type="text/javascript">document.onkeydown = arrowChecker;
+
+    function arrowChecker(e) {
+        e = e || window.event;
+        if (e.keyCode == '37') { //left
+            document.location.href = "index.html";
+        }
+        else if (e.keyCode == '39') { //right
+            document.location.href = "sec.html";
+        }
+        else if (e.keyCode == '27'){
+            document.location.href = "http://google.pl"
+        }
+        else if (e.keyCode == '121'){
+            document.location.href = "http://google.pl"
+        }
+    }</script>
+
+
+
+
+</head>
+
+<body onload="updateClock(); setInterval('updateClock()', 1000 )">
+
+
+<script type="text/javascript">opis(numer)</script>
+<div id="content">
+
+	<div id="logo">
+	InsydeH20 Oprogramowanie Konfiguracyjne Ver. 3.7-Web_Sim_Release
+	</div>
+	<div id="description">
+	Najedź na dowolną opcje, aby zobaczyć jej opis
+	</div>
+	
+	<div id="menu">
+	<div class="option"><a onmouseover="opis(1);">Informacje</a></div>
+	<div class="option"><a onmouseover="opis(2);">Konfiguracja</a></div>
+	<div class="option"><a onmouseover="opis(3);">Bezpieczeństwo</a></div>
+	<div class="option"><a onmouseover="opis(4);">Boot</a></div>
+	<div class="option"><a onmouseover="opis(5);">Wyjście</a></div>
+	</div>
+	
+	<div id="settings">
+			<div id="inner_settings" style="color:darkblue">
+				Czas Systemowy:<span style="margin-left:10.7em"></span>[<span id="clock">&nbsp;</span>]<br />
+				Data Systemowa:<span style="margin-left:10.7em">[02/19/2017]</span><br />
+			<br />
+				UUID Legacy:<span style="margin-left:11.6em">
+					<select>
+  						<option value="[Aktywne]">[Aktywne]</option>
+  						<option value="[Nieaktywne]">[Nieaktywne]</option>
+					</select>
+			</span><br />
+				Bezprzewodowy Lan:<span style="margin-left:9.2em">
+					<select>
+  						<option value="[Aktywne]">[Aktywne]</option>
+  						<option value="[Nieaktywne]">[Nieaktywne]</option>
+					</select>
+			</span><br />
+				Tryb Kontrolera SATA:<span style="margin-left:8em">
+					<select>
+  						<option value="[Aktywne]">[Aktywne]</option>
+  						<option value="[Nieaktywne]">[Nieaktywne]</option>
+					</select>
+			</span><br />
+				Urządzenie Graficzne:<span style="margin-left:8.4em">
+					<select>
+  						<option value="[Aktywne]">[Aktywne]</option>
+  						<option value="[Nieaktywne]">[Nieaktywne]</option>
+					</select>
+			</span><br />
+				PXE Boot to LAN<span style="margin-left:10.4em">
+					<select>
+  						<option value="[Aktywne]">[Aktywne]</option>
+  						<option value="[Nieaktywne]">[Nieaktywne]</option>
+					</select>
+			</span><br />
+				Dzwięk startu:<span style="margin-left:10.8em">
+					<select>
+  						<option value="[Nieaktywne]">[Nieaktywne]</option>
+  						<option value="[Aktywne]">[Aktywne]</option>
+					</select>
+			</span><br />
+				Technologia Wirtualizacji Intel<span style="margin-left:4em">
+					<select>
+  						<option value="[Aktywne]">[Aktywne]</option>
+  						<option value="[Nieaktywne]">[Nieaktywne]</option>
+					</select>
+			</span><br />
+				Narzędzie Aktualizacyjne BIOS USB:<span style="margin-left:2.8em">
+					<select>
+  						<option value="[Aktywne]">[Aktywne]</option>
+  						<option value="[Nieaktywne]">[Nieaktywne]</option>
+					</select>
+			</span><br /><br /><br /><br /><br /><br />
+			</div>
+	</div>
+
+
+
+	<div id="controls">
+	<div class="optionC">F1 Pomoc </div> 
+	<div class="optionC">&#8593;&#8595; Wybierz Opcje</div>
+	<div class="optionC">&#8596; Wybierz Menu</div>
+	<div class="optionC">Enter Wybierz</div>
+	<div class="optionC">F5/F6 Zmień Wartość</div>
+	<div class="optionC">F9 Ustawienia Domyślne</div>
+	<div class="optionC">ESC Wyjdź</div>
+	<div class="optionC">F10 Zapisz i Wyjdź</div>
+	</div>
+	
+	<div id="footer">
+	Copyright &copy by Dominik "McDominikoso" Kostecki. Przeznaczone na Cele Naukowe. Wersja Prototypowa, Wszelkie prawa Zastrzeżone.
+	</div>
+	
+
+</div>
+<script type="text/javascript">document.body.innerHTML = document.body.innerHTML.replace("&amp;tab;", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;").replace("&amp;tabf;", "&nbsp;&nbsp;&nbsp;&nbsp;");</script>
+</body>
+</html>
